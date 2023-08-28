@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12-Todo Lists</title>
+    <link rel="stylesheet" href="12-todo-list.css" />
+  </head>
+  <body>
+    <div class="wrapper-grid">
+      <h2>Todo Lists</h2>
+
+      <div class="grid col-2">
+        <!-- List Selector Dropdown -->
+        <label for="list-selector">Select Todo List:</label>
+        <select class="list-selector"></select>
+      </div>
+
+      <div class="grid col-2">
+        <!-- Create New List Button -->
+        <button class="btn--create-list">Create New List</button>
+        <!-- Delete List Button -->
+        <button class="btn--delete-list">Delete List</button>
+      </div>
+
+      <!-- Todo Input Fields -->
+      <div class="grid col-3">
+        <input type="text" placeholder="Todo name" class="todo-name" />
+
+        <input type="date" placeholder="Todo date" class="todo-date" />
+
+        <button class="btn--add">Add Todo</button>
+      </div>
+
+      <!-- Todo List Container -->
+      <div class="todo-container grid">
+        <!-- Todo items will be displayed here -->
+      </div>
+    </div>
+    <!-- Include your JavaScript code here -->
+    <script src="12-todo-list.js">
+      // Your JavaScript code here
+    </script>
+  </body>
+</html>

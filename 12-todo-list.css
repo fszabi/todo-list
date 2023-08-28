@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial;
+  height: 100dvh;
+  display: grid;
+  place-items: center;
+}
+
+input,
+select {
+  height: 40px;
+}
+
+.inner {
+  padding: 0.25em;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.wrapper-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  gap: 1em;
+  max-width: 800px;
+  word-wrap: break-word;
+}
+
+.col-1 {
+  grid-template-columns: 1fr;
+}
+
+.col-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.col-3 {
+  grid-template-columns: 200px minmax(70px, 200px) 120px;
+}
+
+.col-4 {
+  grid-template-columns: 200px minmax(70px, 200px) 120px 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .col-4,
+  .col-3,
+  .col-2 {
+    grid-template-columns: 200px;
+  }
+}
+
+input {
+  padding: 0.5em;
+  font-size: 1rem;
+}
+
+button {
+  color: white;
+  border: 0;
+  cursor: pointer;
+  height: 40px;
+}
+
+.btn--add,
+.btn--create-list {
+  background-color: green;
+}
+
+.btn--delete,
+.btn--delete-list {
+  background-color: darkred;
+}
